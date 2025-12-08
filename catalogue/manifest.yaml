@@ -43,14 +43,13 @@ spec:
         ports:
         - name: liveness-port
           containerPort: 8080
-
-        resoureces:
-            requests:
-              memory: "100m"
-              cpu: "128Mi"
-            limits:
-              memory: "100m"
-              cpu: "128Mi"
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "128Mi"
+          limits:
+            cpu: "100m"
+            memory: "128Mi"
         readinessProbe:
           httpGet:
             path: /health
