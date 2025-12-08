@@ -55,6 +55,7 @@ spec:
         volumeMounts:
         - name: mongodb
           mountPath: /data/db
+          
   volumeClaimTemplates:
   - metadata:
       name: mongodb
