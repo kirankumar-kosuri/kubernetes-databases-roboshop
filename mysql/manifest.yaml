@@ -8,7 +8,7 @@ data:
     [mysqld]
     innodb_redo_log_capacity = 2G
 ---
-# service, headless service, statefulset, pvc
+# service, headless service, statefulset,pvc
 apiVersion: v1
 kind: Service
 metadata:
